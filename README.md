@@ -1,24 +1,46 @@
-# README
+# Pizza Menu API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby Version: 3.0.0
+Rails Version: 7.0.8
 
-Things you may want to cover:
+This API is designed to manage and serve the pizza menus. Developed using Ruby on Rails, it provides endpoints for fetching menus, with capabilities to search by name and sort by price.
 
-* Ruby version
 
-* System dependencies
+#### Features
+* Fetch all menus
+* Search menus by name
+* Sort menus by price
 
-* Configuration
 
-* Database creation
+**Setup**
 
-* Database initialization
+* first clone the directory 
+                      ```
+                      git clone git@github.com:sajjadmurtaza/pizza_menu_api.git
+                      ```
+ *  ```cd pizza_menu_api```
 
-* How to run the test suite
+ *  ```cp .env.sample .env```
 
-* Services (job queues, cache servers, search engines, etc.)
+ *  ```bundle install ```
 
-* Deployment instructions
+ *  ```rails db:create```
 
-* ...
+ *  ```rails db:migrate```
+
+ *  Don't forget: ```rails db:seed```
+
+ *  ```rails s ```
+
+
+ #### API Endpoints
+* Fetch Menus
+    * URL: /api/v1/menus
+    * Method: GET
+    * URL Params:
+        * name=[string]: To search by menu name
+        * order=[asc|desc]: To sort by price, ascending or descending
+
+### Specs
+
+run ``` bundle exe rspec   ``` to run the tests
