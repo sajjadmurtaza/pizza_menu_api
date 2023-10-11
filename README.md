@@ -47,6 +47,10 @@ This API is designed to manage and serve the pizza menus. Developed using Ruby o
 
  *  Don't forget: ```rails db:seed```
 
+ * AND, set origins at config/initializers/cors.rb correctly
+e.g.  ```origins 'localhost:3001'  # Adjust this if your frontend is on a different domain or port```
+
+
  *  ```rails s ```
 
 
@@ -58,6 +62,18 @@ This API is designed to manage and serve the pizza menus. Developed using Ruby o
         * name=[string]: To search by menu name
         * order=[asc|desc]: To sort by price, ascending or descending
 
+    * http://localhost:3000/api/v1/menus
+        * ![alt text](https://raw.githubusercontent.com/sajjadmurtaza/SchedulyBridge/master/app/assets/images/all.png "all meanu Screenshot")
+    * http://localhost:3000/api/v1/menus?order=desc
+        * ![alt text](https://raw.githubusercontent.com/sajjadmurtaza/SchedulyBridge/master/app/assets/images/o.png "order meanu Screenshot")
+    * http://localhost:3000/api/v1/menus?name=Margherita
+        * * ![alt text](https://raw.githubusercontent.com/sajjadmurtaza/SchedulyBridge/master/app/assets/images/s.png "search meanu Screenshot")
+
 ### Specs
 
-run ``` bundle exe rspec   ``` to run the tests
+run ``` bundle exe rspec``` to run the tests
+
+
+## Note:
+**Please adjust config/initializers/cors.rb file correclty**
+e.g.  ```origins 'localhost:3001'  # Adjust this if your frontend is on a different domain or port```
