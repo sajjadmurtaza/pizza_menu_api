@@ -11,6 +11,23 @@ This API is designed to manage and serve the pizza menus. Developed using Ruby o
 * Search menus by name
 * Sort menus by price
 
+### Key files
+
+    
+    app
+    ├── controller                     
+    │      └── api/v1
+    │               └── menus_controller
+    ├── models                     
+    │      └── menu
+    │
+    |
+    ├── services
+    |      └── fetuch_menu_service
+    |
+    │
+    └── spec
+
 
 **Setup**
 

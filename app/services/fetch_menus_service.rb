@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 class FetchMenusService
-  def initialize(search_name = nil, sort_order = 'asc')
+  def initialize(search_name = nil, sort_order = nil)
     @search_name = search_name
-    @sort_order = sort_order
+    @sort_order = sort_order || 'asc'
   end
 
   def call
